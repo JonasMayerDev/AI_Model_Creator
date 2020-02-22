@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Parameterwahl</class>
+ <widget class="QMainWindow" name="Parameterwahl">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>632</width>
+    <height>304</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Parameterwahl</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSlider" name="sliderModel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>571</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>16</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>54</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>schnell</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>40</y>
+      <width>54</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>genau</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>251</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wähle parameter für die Bilderkennung</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>40</y>
+      <width>381</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Verhältnis Geschwindigkeit und Genauigkeit (pretrained model)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>54</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>klein</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>100</y>
+      <width>54</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>groß</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="sliderRAM">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>120</y>
+      <width>571</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>256</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>100</y>
+      <width>441</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Größe des RAMs für das Trainiren (je größer desto schneller)  (batch_size)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>54</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>kurz</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>160</y>
+      <width>54</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>lang</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>160</y>
+      <width>351</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Länge des Trainieren (Evaluationen )</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="sliderEval">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>180</y>
+      <width>571</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>250</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditName">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>220</y>
+      <width>411</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Modelname eingeben und Speichern</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonName">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>220</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Modelname speichern  </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonWeiter">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>270</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Weiter</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonNormal">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>270</y>
+      <width>161</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Standarteinstellungen</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
