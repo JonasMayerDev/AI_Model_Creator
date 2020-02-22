@@ -25,9 +25,8 @@ python3 -m venv ./VirtualPython3
 
 . VirtualPython3/bin/activate
 cd ./VirtualPython3
-pip3 install torch==1.4.0+cpu torchvision==0.5.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
 
-PKGS="opencv-python Pillow pandas rospkg catkin_pkg pyqt5"
+PKGS="opencv-python pandas rospkg catkin_pkg pyqt5"
 
 echo Check if all python libarys are installed...
 

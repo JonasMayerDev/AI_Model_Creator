@@ -25,6 +25,7 @@ python3 -m venv ./VirtualPython3
 . VirtualPython3/bin/activate
 cp ./activate_this.py ./VirtualPython3/bin/activate_this.py
 cd ./VirtualPython3
+pip3 install Pillow==7.0.0
 pip3 install torch==1.4.0+cpu torchvision==0.5.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
 
 PKGS="pyqt5 google_images_download"

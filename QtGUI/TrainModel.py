@@ -1,3 +1,8 @@
+import sys
+syspath0=sys.path[0]
+exec(open(sys.path[0]+"/../VirtualPython3/bin/activate_this.py").read(), {'__file__': sys.path[0]+"/../VirtualPython3/bin/activate_this.py"})
+sys.path.append(sys.path[0])
+sys.path[0] = syspath0
 from torch import nn,optim,utils,exp,stack,autograd,save,load
 from torchvision import transforms,models,datasets
 import os

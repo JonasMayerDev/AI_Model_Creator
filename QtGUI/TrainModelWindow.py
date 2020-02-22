@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 import sys
+syspath0=sys.path[0]
+exec(open(sys.path[0]+"/../VirtualPython3/bin/activate_this.py").read(), {'__file__': sys.path[0]+"/../VirtualPython3/bin/activate_this.py"})
+sys.path.append(sys.path[0])
+sys.path[0] = syspath0
 import os
 from PyQt5.QtWidgets import QApplication, QMainWindow,QWidget,QCheckBox,QRadioButton
 from PyQt5 import uic
