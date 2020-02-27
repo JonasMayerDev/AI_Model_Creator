@@ -8,32 +8,31 @@ from PyQt5.QtWidgets import QApplication
 app = QApplication(sys.argv)
 import shutil
 from google_images_download import google_images_download 
-import Checkwindow
+#import Checkwindow
 import ErkennungsWindow
 import MessageBox
 import Picswindow
 import TrainModelWindow
-sys.path.append(sys.path[0]+"/../RealtimeDetection/QtGui")
-import Launchwindow
+
 
 Headpath = sys.path[0]+"/.."
 
-checkwindow = Checkwindow.Checkwindow()
+#checkwindow = Checkwindow.Checkwindow()
 choosewindow = ErkennungsWindow.Choosewindow()
 picswindow = Picswindow.Picswindow()
 trainModelWindow = TrainModelWindow.TrainModelwindow()
 messagewindow = MessageBox.Messagewindow()
-LaunchWindow=Launchwindow.Launchwindow()
+
 ModelNumber,batchsize,evals,savename = 6,64,50,"test"
 
 
 
-def weiter_checkwindow():
-    if Checkwindow.AllInstalled:
-        #choosewindow.Choosewindow.show()
-        checkwindow.Checkwindow.close()
-    else:
-        messagewindow.show_window("Warte bis die Installation <br>beendet ist!")
+#def weiter_checkwindow():
+#    if Checkwindow.AllInstalled:
+#        choosewindow.Choosewindow.show()
+#        checkwindow.Checkwindow.close()
+#    else:
+#        messagewindow.show_window("Warte bis die Installation <br>beendet ist!")
 
         
 
@@ -99,22 +98,12 @@ def weiter_picswindow():
     else:
         messagewindow.show_window("Du musst mindestens eine Klasse erstelen!")
 
-def weiter_trainModel():
-    trainModelWindow.TainModelwindow.close()
-    checkwindow.Checkwindow.show()
-def stop_trainModel():
-    trainModelWindow.TainModelwindow.close()
-    
-    
+
 
 
 choosewindow.buttonWeiter.clicked.connect(weiter_choosewindow)
-checkwindow.buttonWeiter.clicked.connect(weiter_checkwindow)
+#checkwindow.buttonWeiter.clicked.connect(weiter_checkwindow)
 picswindow.buttonWeiter.clicked.connect(weiter_picswindow)
-trainModelWindow.buttonWeiter.clicked.connect(weiter_trainModel)
-trainModelWindow.buttonStop.clicked.connect(weiter_trainModel)
 
 choosewindow.Choosewindow.show()
-LaunchWindow.Launchwindow.show()
-
 app.exec_()

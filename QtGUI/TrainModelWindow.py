@@ -49,6 +49,9 @@ class Trainer(QObject):
             "classes":classes
         },sys.path[0]+"/../Models/"+saveName+"/"+saveName+".pt")
 
+        
+
+        
 
 class TrainModelwindow:
     
@@ -60,13 +63,8 @@ class TrainModelwindow:
         self.progressBarTrain = self.TainModelwindow.progressBar1
         self.progressBarTest = self.TainModelwindow.progressBar2
 
-        self.buttonWeiter = self.TainModelwindow.weiter
-        self.buttonStop = self.TainModelwindow.stop
-
         self.sucessLabel = self.TainModelwindow.sucessLabel
         self.sucessLabel.setVisible(False)
-        self.buttonWeiter.setVisible(False)
-        self.buttonStop.setVisible(False)
         self.progressBarTest.setValue(100)
         self.progressBarTrain.setValue(100)
         
@@ -87,8 +85,6 @@ class TrainModelwindow:
     def update_progressbar(self,val):
         if val == 100:
             self.sucessLabel.setVisible(True)
-            self.buttonWeiter.setVisible(True)
-            self.buttonStop.setVisible(True)
         self.progressBar.setValue(val)
     def update_numberLossTrain(self,val):
         self.numberLossTrain.display(val)
