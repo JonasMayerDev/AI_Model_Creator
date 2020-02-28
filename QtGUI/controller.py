@@ -8,13 +8,13 @@ from PyQt5.QtWidgets import QApplication
 app = QApplication(sys.argv)
 import shutil
 from google_images_download import google_images_download 
-import Checkwindow
 import ErkennungsWindow
 import MessageBox
 import Picswindow
 import TrainModelWindow
-sys.path.append(sys.path[0]+"/../RealtimeDetection/QtGui")
+sys.path.append(sys.path[0]+"/../realtime_detect/QtGui")
 import Launchwindow
+import Checkwindow
 
 Headpath = sys.path[0]+"/.."
 
