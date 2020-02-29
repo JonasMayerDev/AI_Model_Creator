@@ -12,29 +12,17 @@ import ErkennungsWindow
 import MessageBox
 import Picswindow
 import TrainModelWindow
-sys.path.append(sys.path[0]+"/../realtime_detect/QtGui")
-import Launchwindow
-import Checkwindow
+
 
 Headpath = sys.path[0]+"/.."
 
-checkwindow = Checkwindow.Checkwindow()
+
 choosewindow = ErkennungsWindow.Choosewindow()
 picswindow = Picswindow.Picswindow()
 trainModelWindow = TrainModelWindow.TrainModelwindow()
 messagewindow = MessageBox.Messagewindow()
-LaunchWindow=Launchwindow.Launchwindow()
+
 ModelNumber,batchsize,evals,savename = 6,64,50,"test"
-
-
-
-def weiter_checkwindow():
-    if checkwindow.allInstallesComplet:
-        #choosewindow.Choosewindow.show()
-        LaunchWindow.Launchwindow.show()
-        checkwindow.Checkwindow.close()
-    else:
-        messagewindow.show_window("Warte bis die Installation <br>beendet ist!")
 
         
 
@@ -105,6 +93,20 @@ def weiter_trainModel():
     if not "realtime_detect" in os.listdir(sys.path[0]+"/.."):
         cmd = "cd "+sys.path[0]+"/.. && git clone https://github.com/BySuxax/realtime_detect.git"
         os.system(cmd)
+    sys.path.append(sys.path[0]+"/../realtime_detect/QtGui")
+    import Launchwindow
+    import Checkwindow
+    LaunchWindow=Launchwindow.Launchwindow()
+    checkwindow = Checkwindow.Checkwindow()
+    
+    def weiter_checkwindow():
+        if checkwindow.allInstallesComplet:
+            #choosewindow.Choosewindow.show()
+            LaunchWindow.Launchwindow.show()
+            checkwindow.Checkwindow.close()
+        else:
+            messagewindow.show_window("Warte bis die Installation <br>beendet ist!")
+    checkwindow.buttonWeiter.clicked.connect(weiter_checkwindow)
     checkwindow.Checkwindow.show()
 def stop_trainModel():
     trainModelWindow.TainModelwindow.close()
@@ -113,7 +115,7 @@ def stop_trainModel():
 
 
 choosewindow.buttonWeiter.clicked.connect(weiter_choosewindow)
-checkwindow.buttonWeiter.clicked.connect(weiter_checkwindow)
+
 picswindow.buttonWeiter.clicked.connect(weiter_picswindow)
 trainModelWindow.buttonWeiter.clicked.connect(weiter_trainModel)
 trainModelWindow.buttonStop.clicked.connect(weiter_trainModel)

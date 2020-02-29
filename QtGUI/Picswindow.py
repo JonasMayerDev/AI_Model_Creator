@@ -122,6 +122,7 @@ class Picswindow:
         if self.klassenwindow.lineName.text != "":
             print(self.klassenwindow.lineName.text())
             self.klassenwindow.comboBox.addItem(QIcon(),self.klassenwindow.lineName.text())
+            self.klassenwindow.comboBox.setCurrentIndex(self.klassenwindow.comboBox.count()-1)
         else:
             print("line is empty")
     
