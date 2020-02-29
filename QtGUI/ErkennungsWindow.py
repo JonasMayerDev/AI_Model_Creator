@@ -23,7 +23,7 @@ class Choosewindow:
         self.buttonName.setText("Model Name Speichern")
         self.sliderModel.setValue(8)
         self.sliderRAM.setValue(64)
-        self.sliderEval.setValue(500)
+        self.sliderEval.setValue(250)
         self.wasNameSet = False
         def lock_name():
             #print(dir(self.buttonName))
