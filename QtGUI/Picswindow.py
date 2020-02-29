@@ -108,9 +108,10 @@ class Picswindow:
 
     def buttonChooseClicked(self,*args):
         newPicsPath=QFileDialog.getExistingDirectoryUrl().path()
-        self.picsPaths = os.listdir(newPicsPath)
-        self.FolderPath = newPicsPath
-        self.update_pics_with_path()
+        if os.path.exists(newPicsPath):
+            self.picsPaths = os.listdir(newPicsPath)
+            self.FolderPath = newPicsPath
+            self.update_pics_with_path()
     
     def klassenbutton(self):
         self.klassenwindow.getClass(self.klassen)

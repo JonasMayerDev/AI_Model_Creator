@@ -29,8 +29,9 @@ ModelNumber,batchsize,evals,savename = 6,64,50,"test"
 
 
 def weiter_checkwindow():
-    if Checkwindow.AllInstalled:
+    if checkwindow.allInstallesComplet:
         #choosewindow.Choosewindow.show()
+        LaunchWindow.Launchwindow.show()
         checkwindow.Checkwindow.close()
     else:
         messagewindow.show_window("Warte bis die Installation <br>beendet ist!")
@@ -101,6 +102,9 @@ def weiter_picswindow():
 
 def weiter_trainModel():
     trainModelWindow.TainModelwindow.close()
+    if not "realtime_detect" in os.listdir(sys.path[0]+"/.."):
+        cmd = "cd "+sys.path[0]+"/.. && git clone https://github.com/BySuxax/realtime_detect.git"
+        os.system(cmd)
     checkwindow.Checkwindow.show()
 def stop_trainModel():
     trainModelWindow.TainModelwindow.close()
@@ -115,6 +119,6 @@ trainModelWindow.buttonWeiter.clicked.connect(weiter_trainModel)
 trainModelWindow.buttonStop.clicked.connect(weiter_trainModel)
 
 choosewindow.Choosewindow.show()
-LaunchWindow.Launchwindow.show()
+
 
 app.exec_()

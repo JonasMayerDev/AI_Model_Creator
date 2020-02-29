@@ -11,10 +11,8 @@ from PIL import Image
 
 def load_train_test_pics(path,batchSize):
     
-    
     #model2 = models.squeezenet1_0(pretrained=True)
     #model_out = 1000
-
 
     normalize = transforms.Normalize(
         mean=[0.485,0.456,0.406],
