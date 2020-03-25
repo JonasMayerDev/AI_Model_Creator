@@ -1,7 +1,7 @@
 ICH ÜBERNEHME KEINE VERANTWORTUNG FÜR HIER GENANNTE DATEN. 
 I WILL NOT TAKE ANY RESPONSIBILITY FOR HERE SPECIFIED DATA.
 
-Die folgenden Programme haben die nach dem ":" folgenden Lizenzen (Einsehbar unter OutherLicenses/LICENSNAME.txt).
+Die folgenden Programme haben die nach dem ":" folgenden Lizenzen (Einsehbar unter Licenses/LICENSNAME.txt).
 Aus sicherheits / legalitätsgründen und dem Ziehl die Lizenzregelung möglichst tranzparent zu gestallten habe ich versucht die Lizenzen 
 für folgende Programme herauszusuchen. Donnoch müssten auch alle Lizenzen in den Dateien zur Entsprechenden Libery nach dem Herunterladen
 verfügbar sein. (Bei python liberys unter: VirtualPython3/lib/python3.6/site-packages , VirtualPython3/lib/python3.6/dist-packages ; 
