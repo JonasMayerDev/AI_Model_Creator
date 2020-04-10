@@ -90,10 +90,10 @@ def weiter_picswindow():
 
 def weiter_trainModel():
     trainModelWindow.TainModelwindow.close()
-    if not "realtime_detect" in os.listdir(sys.path[0]+"/.."):
-        cmd = "cd "+sys.path[0]+"/.. && git clone https://github.com/BySuxax/realtime_detect.git"
+    if not "Realtime_Detect" in os.listdir(sys.path[0]+"/.."):
+        cmd = "cd "+sys.path[0]+"/.. && git clone https://github.com/BySuxax/Realtime_Detect.git"
         os.system(cmd)
-    sys.path.append(sys.path[0]+"/../realtime_detect/QtGui")
+    sys.path.append(sys.path[0]+"/../Realtime_Detect/QtGui")
     import Launchwindow
     import Checkwindow
     LaunchWindow=Launchwindow.Launchwindow()
