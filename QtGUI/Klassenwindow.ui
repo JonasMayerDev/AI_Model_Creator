@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>KlassenWahl</string>
   </property>
   <widget class="QComboBox" name="comboBox">
    <property name="geometry">
@@ -28,7 +28,7 @@
     <rect>
      <x>50</x>
      <y>10</y>
-     <width>271</width>
+     <width>341</width>
      <height>17</height>
     </rect>
    </property>

@@ -15,6 +15,9 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QSlider" name="sliderModel">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -66,7 +69,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Wähle parameter für die Bilderkennung</string>
+     <string>Wähle Parameter für die Bilderkennung</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -74,7 +77,7 @@
      <rect>
       <x>140</x>
       <y>40</y>
-      <width>381</width>
+      <width>431</width>
       <height>17</height>
      </rect>
     </property>
@@ -129,12 +132,12 @@
      <rect>
       <x>100</x>
       <y>100</y>
-      <width>441</width>
+      <width>471</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>Größe des RAMs für das Trainiren (je größer desto schneller)  (batch_size)</string>
+     <string>Größe des RAMs für das Trainiren (je größer desto besser)  (batch_size)</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
@@ -168,12 +171,12 @@
      <rect>
       <x>200</x>
       <y>160</y>
-      <width>351</width>
+      <width>371</width>
       <height>17</height>
      </rect>
     </property>
     <property name="text">
-     <string>Länge des Trainieren (Evaluationen )</string>
+     <string>Länge des Trainieren (Evaluationen)</string>
     </property>
    </widget>
    <widget class="QSlider" name="sliderEval">
@@ -235,6 +238,9 @@
     </property>
    </widget>
    <widget class="QPushButton" name="buttonNormal">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>30</x>

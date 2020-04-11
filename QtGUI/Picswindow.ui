@@ -119,6 +119,9 @@
      <enum>QFrame::Raised</enum>
     </property>
     <widget class="QListView" name="listView">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -143,6 +146,9 @@
     </property>
    </widget>
    <widget class="QLineEdit" name="lineKeyword">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>222</x>
@@ -159,6 +165,9 @@
     </property>
    </widget>
    <widget class="QPushButton" name="buttonDownload">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>10</x>
