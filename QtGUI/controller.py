@@ -110,6 +110,7 @@ def weiter_trainModel():
     checkwindow.Checkwindow.show()
 def stop_trainModel():
     trainModelWindow.TainModelwindow.close()
+    exit()
     
     
 
@@ -118,7 +119,7 @@ choosewindow.buttonWeiter.clicked.connect(weiter_choosewindow)
 
 picswindow.buttonWeiter.clicked.connect(weiter_picswindow)
 trainModelWindow.buttonWeiter.clicked.connect(weiter_trainModel)
-trainModelWindow.buttonStop.clicked.connect(weiter_trainModel)
+trainModelWindow.buttonStop.clicked.connect(stop_trainModel)
 
 choosewindow.Choosewindow.show()
 
