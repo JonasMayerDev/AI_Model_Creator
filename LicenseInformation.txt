@@ -1,15 +1,15 @@
 I DO NOT TAKE ANY RESPONSIBILITY FOR DATA MENTIONED HERE OR IN THE PROJEKT. 
 
 The following programs !! are installed automatically !! and have the licenses following after the ":" (Viewable under Licenses/LICENSNAME.txt).
-For security / legality reasons and to make the license regulation as transparent as possible I have tried to find the licenses 
-for the following programs. Also, all licenses and source code in the files for the corresponding Libery should be available after downloading. ( python liberys under: VirtualPython3/lib/python3.6/site-packages , VirtualPython3/lib/python3.6/dist-packages ; 
+For security/legality reasons and to make the license regulation as transparent as possible I have tried to find the licenses for the following programs. Also, all licenses and source code in the files for the corresponding Library should be available after downloading. ( python libraries under: VirtualPython3/lib/python3.6/site-packages , VirtualPython3/lib/python3.6/dist-packages ; 
 For apt package Licenses under: /usr/share/doc/PACKAGENAME/copyright  /  The Sourcecode: /usr/share/doc/PACKAGENAME )
 
 ------------------------AI_Model_Creator---------------------
 
 ---APT-Packages---
 python3.6 : PSF_License 
-Python3.6-venv (for python 3.6): MIT_License
+Python3-venv (for python 3.6): MIT_License
+
 ---pip packeges stored in VirtualPython3 Folder (venv virtual enviroment)---
 Pillow (Pillow==6.2.2): open_source_PIL_Software_License
 PyTorch (torch==1.4.0+cpu): PyTorch_License (Caffe: Caffe_License Caffe2: Apache_License2) (from -f https://download.pytorch.org/whl/torch_stable.html)
@@ -23,15 +23,35 @@ google-images-download (google-images-download-2.8.0): MIT_License_images_downlo
 
 ------------------------Realtime_Detect--------------------------
 
+---System requirement---
+python2.7 / python 3.6
+ROS Melodic: BSD_3-Clause_License
+
 ---APT-Packages---
-python-catkin-tools: BSD_License_catkin_tools 
-python-opencv: BSD_3-Clause_License_opencv
+python3.6 : PSF_License (if not already installed)
+Python3-venv (for python 3.6): MIT_License
+
 ---pip packeges stored in VirtualPython3 Folder (venv virtual enviroment)---
-pandas: BSD_3-Clause_License_pandas
-rospkg: BSD_3-Clause_License_rospkg
-catkin_pkg: BSD_3-Clause_License_catkin_pkg
-pyyaml: MIT_License_pyyaml
-catkin_tools: Apache_License2
-cv_bridge: BSD_License_cv_bridge
-ROS: BSD_3-Clause_License
+Pillow (Pillow==6.2.2): open_source_PIL_Software_License
+PyTorch (torch==1.4.0+cpu): PyTorch_License (Caffe: Caffe_License Caffe2: Apache_License2) (from -f https://download.pytorch.org/whl/torch_stable.html)
+PyTorch (torchvision==0.5.0+cpu): BSD_3-Clause_License_torchvision (from -f https://download.pytorch.org/whl/torch_stable.html)
+python3.6 : PSF_License 
+pip (pip-20.0.2): MIT_License
+setuptools (setuptools-46.1.3): MIT_License
+PyQt5 (pyqt5-5.14.2): GPLv3_License
+google-images-download (google-images-download-2.8.0): MIT_License_images_download
+
+python-opencv (opencv-python-4.2.0.34): BSD_3-Clause_License_opencv
+pandas (pandas-1.0.3): BSD_3-Clause_License_pandas
+rospkg (rospkg-1.2.4): BSD_3-Clause_License_rospkg
+catkin_pkg (catkin-pkg-0.4.16): BSD_3-Clause_License_catkin_pkg
+pyyaml (pyyaml-5.3.1): MIT_License_pyyaml
+catkin_tools (catkin_tools-0.4.5): Apache_License2
+
+---installed from source---
+cv_bridge (status as of 14-4-2020): BSD_License_cv_bridge (installed from source: https://github.com/ros-perception/vision_opencv and built with catkin)
+
+--------------------------------------------------------------------------------------------------------------
+!!All packages need dependent packages installed but this will happen when installing with pip automatically!!
+
 
