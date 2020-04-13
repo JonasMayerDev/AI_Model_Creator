@@ -2,7 +2,7 @@
 
 filepath=$1
 echo $filepath
-PKGS=(python3.6 python3.6-venv)
+PKGS=(python3.6 python3-venv)
   
 echo Check if Everything reqired is installed
 
@@ -20,7 +20,7 @@ do
 done
 
 cd $filepath
-python3.6 -m venv ./VirtualPython3
+python3 -m venv ./VirtualPython3
 
 . VirtualPython3/bin/activate
 cp ./activate_this.py ./VirtualPython3/bin/activate_this.py
