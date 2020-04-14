@@ -1,6 +1,6 @@
 I DO NOT TAKE ANY RESPONSIBILITY FOR DATA MENTIONED HERE OR IN THE PROJEKT. 
 
-The following programs !! are installed automatically !! and have the licenses following after the ":" (Viewable under Licenses/LICENSNAME.txt).
+The following programs !! are installed automatically !! and have the licenses following after the ":" at 4-14-2020 (Viewable under Licenses/LICENSNAME.txt).
 For security/legality reasons and to make the license regulation as transparent as possible I have tried to find the licenses for the following programs. Also, all licenses and source code in the files for the corresponding Library should be available after downloading. ( python libraries under: VirtualPython3/lib/python3.6/site-packages , VirtualPython3/lib/python3.6/dist-packages ; 
 For apt package Licenses under: /usr/share/doc/PACKAGENAME/copyright  /  The Sourcecode: /usr/share/doc/PACKAGENAME )
 
