@@ -2,23 +2,23 @@
 Diese Software soll einen easy to use (, deutschsprachigen) KI-Model Creator für Bilderkennung darstellen, welche trotz der einfachen Bedienbarkeit eine hohe Variabilität erreicht, um SIE möglichst bei IHREM nächsten Bilderkennungsprojekt zu unterstützen. Die erstellten Models können zumindest zurzeit ausschließlich mit der [Realtime_Detect](https://github.com/BySuxax/Realtime_Detect) Software ausgeführt werden! Der [AI_Model_Creator](https://github.com/BySuxax/AI_Model_Creator) installiert Realtime_Detect falls sie wollen automatisch. <br>
 Wenn aber Fehler bei der Installation auftreten oder sonst etwas mit dieser Software getan werden soll, kann dieses Programm auch manuell installiert werden wie [hier](https://github.com/BySuxax/Realtime_Detect) beschrieben. <br><br>
 
-Veröffentlicht unter der GPL v3:
-AI_Model_Creator; an easy to use AI cumputer vision model creator.
-Copyright (C) 2020  Jonas Mayer
+Veröffentlicht unter der GPL v3:<br>
+AI_Model_Creator; an easy to use AI cumputer vision model creator.<br>
+Copyright (C) 2020  Jonas Mayer<br>
+<br>
+This program is free software: you can redistribute it and/or modify<br>
+it under the terms of the GNU General Public License as published by 
+the Free Software Foundation, either version 3 of the License, or<br>
+(at your option) any later version.<br>
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by    
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+This program is distributed in the hope that it will be useful,<br>
+but WITHOUT ANY WARRANTY; without even the implied warranty of<br>
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the<br>
+GNU General Public License for more details.<br>
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>
-You can contact me by mail: bysuxaxofficial@gmail.com
+You should have received a copy of the GNU General Public License<br>
+along with this program.  If not, see <https://www.gnu.org/licenses/><br>
+You can contact me by mail: bysuxaxofficial@gmail.com<br>
 <br><br>
 
 **Kompatibilität** | **Sollte Funktionieren** | **Tut auf frischem System (getestet)**
