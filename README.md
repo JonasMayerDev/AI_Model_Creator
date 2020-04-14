@@ -1,4 +1,4 @@
-# AI_ModelCreater
+# AI_Model_Creator v 0.0.1 (Pre-Alpha)
 Diese Software soll einen easy to use (, deutschsprachigen) KI-Model Creator für Bilderkennung darstellen, welche trotz der einfachen Bedienbarkeit eine hohe Variabilität erreicht, um SIE möglichst bei IHREM nächsten Bilderkennungsprojekt zu unterstützen. Die erstellten Models können zumindest zurzeit ausschließlich mit der [Realtime_Detect](https://github.com/BySuxax/Realtime_Detect) Software ausgeführt werden! Der [AI_Model_Creator](https://github.com/BySuxax/AI_Model_Creator) installiert Realtime_Detect falls sie wollen automatisch. <br>
 Wenn aber Fehler bei der Installation auftreten oder sonst etwas mit dieser Software getan werden soll, kann dieses Programm auch manuell installiert werden wie [hier](https://github.com/BySuxax/Realtime_Detect) beschrieben.
 
